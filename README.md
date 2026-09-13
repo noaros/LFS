@@ -8,4 +8,4 @@ I appreciate that the LFS project exists as a guide, but there is room for impro
 
 I think I found a mistake in the material, as the instructions set up a "sources" directory as "root", yet later direct you to unpack files as "lfs" user, which doesn't have access, and so won't work. There is a step in chapter 4 to make 'lfs' the owner of all directories under its mount point, but the sources directory is omitted.
 
-Another possible mistake is the generation of an include file in chapter 5. The invoked command did not exist, nor the destination directory, therefore the shell script did not work. I was able to manually create the 'limits.h' file and put in the right spot (I hope) based on clues in the preceding paragraph.
+I had trouble using the shell script in chapter 5 to make the 'limits' file, and thought I had found another mistake. I was able to manually create the 'limits.h' file and put in the right spot based on clues in the nearby paragraph. Later I learned something went wrong with my gcc build, and that was why the script failed.
